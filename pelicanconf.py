@@ -27,3 +27,5 @@ DEFAULT_PAGINATION = 10
 RELATIVE_URLS = True
 
 PLUGINS = ['pelican_youtube']
+
+STATIC_PATHS = ['images',]

@@ -9,6 +9,7 @@ Before using my django template filters, you may want to consider using `JSONify
 Instead of serializing the queryset, you could ``jsondump`` a ``list()`` of ``queryset.values('fields')``.
 
 .. code-block:: python
+
     from django.template import Library
     from django.utils import simplejson
 

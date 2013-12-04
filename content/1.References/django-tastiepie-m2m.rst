@@ -1,6 +1,6 @@
-#########################################
-Django Tastypie ManyToMany Through Part 2
-#########################################
+##################################
+Django Tastypie ManyToMany Through
+##################################
 
 :date: 2012-12-04 02:00:00
 :tags: django, python, tastypie
