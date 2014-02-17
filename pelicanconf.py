@@ -29,3 +29,5 @@ RELATIVE_URLS = True
 PLUGINS = ['pelican_youtube']
 
 STATIC_PATHS = ['images',]
+
+THEME = "/home/eugene/pelican-themes/elegant"
