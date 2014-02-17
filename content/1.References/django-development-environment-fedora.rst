@@ -1,49 +1,36 @@
-Setting up Django Server on EC2 Amazon AMI
-##########################################
+Setup Fedora as Development Environment
+#######################################
 
 :tags: django, amazon, fedora, setup
 :date: 2012-10-22 11:02:00
 
-Install some extra kernel stuff which may be required.
 
 .. code-block:: bash
 
+
+    # Kernel headers, compiler, etc
     yum install kernel-headers kernel-devel gcc
 
-
-Install Yakuake
-
-.. code-block:: bash
-
+    # Yakuake is very useful if you use multiple terminal or screen
     sudo yum install yakuake
 
-Autostart Yakuake
-
-.. code-block:: bash
-
+    # Autostart Yakuake
     sudo cp /usr/share/applications/kde4/yakuake.desktop /etc/xdg/autostart/
 
-Install VIM, SCM
-
-.. code-block:: bash
-
+    # Source Code Management
     sudo yum install git hg svn
+
+    # Best Text Editor
     sudo yum install vim
 
-Install Python PIP (Package manager)
-
-.. code-block:: bash
-
+    # Python Package manager
     sudo yum install python-pip
 
-Install VirtualEnv
-
-.. code-block:: bash
-
+    # Python VirtualEnv
     sudo pip-python install virtualenvwrapper
     mkdir ~/.virtualenvs
 
-Copy into ~/.bashrc file
+Copy this into ~/.bashrc file
 
 .. code-block:: bash
 
@@ -64,10 +51,10 @@ Create script to ssh production & staging server on your home directory
 
     ssh -t -i ~/.ssh/aws-server.pem ec2-user@ip-address screen -R YourName
 
-Create and Copy the Key into Github Account
 
 .. code-block:: bash
 
+    # Create and Copy the Key into Github Key Management 
     ssh-keygen
     cat ~/.ssh/id_rsa.pub
 
@@ -97,12 +84,18 @@ Setup Project
 
 .. code-block:: bash
 
-    sudo yum install mysql mysql-server mysql-devel python python-devel
+    # Setup Necessary Python Library
+    sudo yum install python python-devel
 
-Install Requirement
+    # Setup MySQL if necessary
+    sudo yum install mysql mysql-server mysql-devel
+
+    # If you need PIL library
+    sudo yum install python-imaging
 
 .. code-block:: bash
 
+    # Install Requirement
     pip install -r requirements.txt
 
 
@@ -117,12 +110,6 @@ This is to allow Sudo user to run execute node.
     sudo ln -s /usr/local/bin/npm /usr/bin/npm
     sudo ln -s /usr/local/bin/node-waf /usr/bin/node-waf
 
-
-If you need PIL library:
-
-.. code-block:: bash
-
-    sudo yum install python-imaging
 
 Extras:
 
