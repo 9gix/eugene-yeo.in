@@ -7,7 +7,6 @@ Setup Fedora as Development Environment
 
 .. code-block:: bash
 
-
     # Kernel headers, compiler, etc
     yum install kernel-headers kernel-devel gcc
 
