@@ -7,6 +7,7 @@ SITENAME = u'Reshaping the World Web Experience (WWE)'
 SITEURL = 'http://eugene-yeo.in'
 
 TIMEZONE = 'Asia/Singapore'
+DEFAULT_DATE = 'fs'
 
 DEFAULT_LANG = u'en'
 
