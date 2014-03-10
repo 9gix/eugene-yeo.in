@@ -116,6 +116,30 @@ Setup Memcached
     yum install memcached libmemcached libmemcached-devel
     pip install pylibmc python-memcached
     
+Setup PostgreSQL with PostGIS
+
+.. code-block:: bash
+
+    yum install postgresql-server
+    yum install postgresql
+    yum install postgis
+
+    service postgresql initdb
+    service postgresql start
+    chkconfig postgresql on
+
+    sudo -u postgres psql
+    > create user eugene createdb createuser password 'password';
+
+    createdb mydb
+    CREATE EXTENSION postgis;
+    CREATE EXTENSION postgis_topology;
+
+PostGIS setup troubleshoot: 
+
+* `PostGIS Yum Installation`_
+* `PostGIS User Permission`_
+* `PostGIS Django Troubleshoot`_
 
 Extras:
 
@@ -124,3 +148,8 @@ Extras:
     sudo rpm -Uvh http://download1.rpmfusion.org/free/fedora/rpmfusion-free-release-stable.noarch.rpm
 
 I hope I didn't miss any step. If I do I'll update this post.
+
+
+.. _PostGIS Yum Installation: http://wiki.postgresql.org/wiki/YUM_Installation
+.. _PostGIS User Permission: http://www.postgresql.org/message-id/4D958A35.8030501@hogranch.com
+.. _PostGIS Django Troubleshoot: https://docs.djangoproject.com/en/dev/ref/contrib/gis/install/#troubleshooting
