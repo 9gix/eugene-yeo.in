@@ -109,6 +109,13 @@ This is to allow Sudo user to run execute node.
     sudo ln -s /usr/local/bin/npm /usr/bin/npm
     sudo ln -s /usr/local/bin/node-waf /usr/bin/node-waf
 
+Setup Memcached
+
+.. code-block:: bash
+
+    yum install memcached libmemcached libmemcached-devel
+    pip install pylibmc python-memcached
+    
 
 Extras:
 
