@@ -30,7 +30,7 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-PLUGIN_PATH = '/home/eugene/pelican-plugins'
+PLUGIN_PATH = os.path.join(PROJECT_DIR, 'plugins')
 PLUGINS = [
     'pelican_youtube', 
     'assets',
@@ -38,7 +38,7 @@ PLUGINS = [
 
 STATIC_PATHS = ['images',]
 
-THEME = os.path.join(PROJECT_DIR, 'themes/clean')
+THEME = os.path.join(PROJECT_DIR, 'themes', 'clean')
 
 GOOGLE_ANALYTICS = "UA-48871995-1"
 
