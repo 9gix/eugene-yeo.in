@@ -17,3 +17,9 @@ Quotes
 :: 
 
     "Making the simple complicated is commonplace; making the complicated simple, awesomely simple, that's creativity." ~ Charles Mingus
+
+::
+    
+    "Being able to think is not enough, Think harder" ~ Eugene
+
+
