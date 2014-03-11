@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
+import os
 
 AUTHOR = u'Eugene'
-SITENAME = u'Reshaping the World Web Experience (WWE)'
+SITENAME = u"Eugene's Note"
 SITEURL = 'http://eugene-yeo.in'
 
 TIMEZONE = 'Asia/Singapore'
@@ -31,4 +32,7 @@ PLUGINS = ['pelican_youtube']
 
 STATIC_PATHS = ['images',]
 
-THEME = "/home/eugene/pelican-themes/elegant"
+PROJECT_DIR = os.path.dirname(__file__)
+THEME = os.path.join(PROJECT_DIR, 'themes/clean')
+
+GOOGLE_ANALYTICS = "UA-48871995-1"
