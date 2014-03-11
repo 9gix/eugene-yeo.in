@@ -3,6 +3,8 @@
 from __future__ import unicode_literals
 import os
 
+PROJECT_DIR = os.path.dirname(__file__)
+
 AUTHOR = u'Eugene'
 SITENAME = u"Eugene's Note"
 SITEURL = 'http://eugene-yeo.in'
@@ -28,11 +30,18 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-PLUGINS = ['pelican_youtube']
+PLUGIN_PATH = '/home/eugene/pelican-plugins'
+PLUGINS = [
+    'pelican_youtube', 
+    'assets',
+]
 
 STATIC_PATHS = ['images',]
 
-PROJECT_DIR = os.path.dirname(__file__)
 THEME = os.path.join(PROJECT_DIR, 'themes/clean')
 
 GOOGLE_ANALYTICS = "UA-48871995-1"
+
+ASSET_BUNDLES = (
+    ('core', ['styles/main.scss'], {'filters': 'pyscss', 'output': 'styles/css/core.css'}),
+)

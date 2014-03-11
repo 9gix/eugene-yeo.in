@@ -1,3 +1,6 @@
 pelican>=3.3,<4.0
 s3cmd>=1.1.0-beta3,<2.0
 pelican-youtube>=0.1.0,<1.0
+webassets>=0.9,<1.0
+cssmin>=0.2.0,<0.3
+pyscss>=1.2.0,<1.3
