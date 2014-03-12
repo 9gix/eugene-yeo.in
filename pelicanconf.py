@@ -43,5 +43,5 @@ THEME = os.path.join(PROJECT_DIR, 'themes', 'clean')
 GOOGLE_ANALYTICS = "UA-48871995-1"
 
 ASSET_BUNDLES = (
-    ('core', ['styles/main.scss'], {'filters': 'pyscss', 'output': 'styles/css/core.css'}),
+    ('core', ['css/style.scss'], {'filters': 'scss', 'output': 'core.css'}),
 )
