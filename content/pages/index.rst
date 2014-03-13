@@ -6,7 +6,7 @@ Welcome Note:
 :save_as: index.html
 
 * This page contains Eugene's Notes related to web technology.
-* `Looking for something? </tags>`_
+* `Looking for something? </tags.html>`_
 * `Who am I? <|filename|/pages/about.rst>`_
 * `Any Inquiry? <|filename|/pages/contact.rst>`_
 
