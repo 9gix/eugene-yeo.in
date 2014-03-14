@@ -15,9 +15,12 @@ But we manage to tackle couple opponent out of the arena.
 
 .. image:: |filename|/images/rikishi-1.jpg
    :width: 400px
+   :alt: Rikishi (Front View)
 
 .. image:: |filename|/images/rikishi-2.jpg
    :width: 400px
+   :alt: Rikishi (Side View)
 
 .. image:: |filename|/images/rikishi-3.jpg
    :width: 400px
+   :alt: Rikishi (Top View)
