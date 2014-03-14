@@ -3,7 +3,7 @@
 	url = git@github.com:getpelican/pelican-plugins.git
 [submodule "themes/pelican-themes"]
 	path = themes/pelican-themes
-	url = git@github.com:getpelican/pelican-themes.git
+	url = https://github.com/getpelican/pelican-themes.git
 [submodule "themes/pelican-clean"]
 	path = themes/pelican-clean
 	url = git@github.com:9gix/pelican-clean.git
