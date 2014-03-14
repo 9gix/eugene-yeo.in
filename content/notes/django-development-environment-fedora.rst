@@ -64,7 +64,7 @@ Clone project
     git clone git@github.com:Account/project.git
 
 Setup GitConfig File
-`Alias <http://www.eugene-yeo.me/2012/09/9/my-favorite-git-alias-2012/>`_
+`Alias <|filename|git-alias.rst>`_
 
 .. code-block:: bash
 

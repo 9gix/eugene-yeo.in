@@ -7,8 +7,8 @@ Welcome Note:
 
 * This page contains Eugene's Notes related to web technology.
 * `Looking for something? </tags.html>`_
-* `Who am I? <|filename|/pages/about.rst>`_
-* `Any Inquiry? <|filename|/pages/contact.rst>`_
+* `Who am I? <|filename|about.rst>`_
+* `Any Inquiry? <|filename|contact.rst>`_
 
 Visitor Notice:
 ---------------
