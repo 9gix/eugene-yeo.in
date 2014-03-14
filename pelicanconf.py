@@ -45,3 +45,7 @@ GOOGLE_ANALYTICS = "UA-48871995-1"
 ASSET_BUNDLES = (
     ('core', ['css/style.scss'], {'filters': 'scss', 'output': 'core.css'}),
 )
+
+PYGMENTS_RST_OPTIONS = {
+    'linenos': 'table',
+}
