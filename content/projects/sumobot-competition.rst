@@ -10,9 +10,6 @@ SumoBot Competition 2013 (Lego Mindstorm)
 This robot is created with Lego Mindstorm NXT Educational Version. 
 The robot logic is programmed in Jediscript (modified javascript).
 
-Unfortunately we didn't manage to win the first prize. 
-But we manage to tackle couple opponent out of the arena.
-
 .. image:: |filename|/images/rikishi-1.jpg
    :width: 400px
    :alt: Rikishi (Front View)
