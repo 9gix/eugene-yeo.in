@@ -34,6 +34,7 @@ PLUGIN_PATH = os.path.join(PROJECT_DIR, 'plugins')
 PLUGINS = [
     'pelican_youtube', 
     'assets',
+    'sitemap',
 ]
 
 STATIC_PATHS = ['images',]
@@ -48,4 +49,18 @@ ASSET_BUNDLES = (
 
 PYGMENTS_RST_OPTIONS = {
     'linenos': 'table',
+}
+
+SITEMAP = {
+    'format': 'xml',
+    'priorities': {
+        'articles': 0.9,
+        'pages': 0.6,
+        'indexes': 0.3
+    },
+    'changefreqs': {
+        'articles': 'daily',
+        'pages': 'weekly',
+        'indexes': 'daily'
+    }
 }
