@@ -39,6 +39,8 @@ Personal Installation Guide:
 Available tags:
 ---------------
 
+* Content Related:
+    * quote
 * Programming Related:
     * python
     * django
