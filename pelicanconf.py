@@ -7,7 +7,7 @@ PROJECT_DIR = os.path.dirname(__file__)
 
 AUTHOR = u'Eugene'
 SITENAME = u"Eugene's Note"
-SITEURL = 'http://eugene-yeo.in'
+SITEURL = 'http://blog.eugene-yeo.in'
 
 TIMEZONE = 'Asia/Singapore'
 DEFAULT_DATE = 'fs'
