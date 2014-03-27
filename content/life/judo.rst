@@ -1,6 +1,8 @@
 Judo: My Gentle Ways
 =====================
 
+:status: draft
+
 I love to play judo. 
 
 My friends are very helpful during the training.
