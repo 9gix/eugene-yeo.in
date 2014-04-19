@@ -38,9 +38,9 @@ Personal Installation Guide:
 Categories
 ----------
 
-`Available Categories <|CATEGORIES.rst|>`_
+`Available Categories <CATEGORIES.rst>`_
 
 Tag
 ---
 
-`Available Tags <|TAGS.rst|>`_
+`Available Tags <TAGS.rst>`_
