@@ -35,22 +35,12 @@ Personal Installation Guide:
     # Upload to S3
     make s3_upload
 
+Categories
+----------
 
-Available tags:
----------------
+`Available Categories <|CATEGORIES.rst|>`_
 
-* Content Related:
-    * quote
-* Programming Related:
-    * python
-    * django
-    * javascript
-    * css
-* Activity Related:
-    * errors
-    * setup
-* Event Related
-    * cyberwarfare
-* Tool & Technology Related:
-    * git
-    * email
+Tag
+---
+
+`Available Tags <|TAGS.rst|>`_
