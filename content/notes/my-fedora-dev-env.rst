@@ -1,7 +1,7 @@
 Setup Fedora as Development Environment
 #######################################
 
-:tags: django, amazon, fedora, setup
+:tags: django, setup
 :date: 2012-10-22 11:02:00
 
 
