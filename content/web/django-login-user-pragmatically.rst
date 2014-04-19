@@ -3,7 +3,7 @@ Django Login User Pragmatically
 ###############################
 
 :date: 2013-03-15 16:37:33
-:tags: login, django
+:tags: django
 
 Before any user can login, one has to be authenticated.
 Authentication usually required a password.

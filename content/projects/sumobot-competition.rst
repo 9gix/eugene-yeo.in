@@ -3,7 +3,6 @@ SumoBot Competition 2013 (Lego Mindstorm)
 #########################################
 
 :date: 2013-10-20 04:30
-:tags: lego, jediscript
 :slug: sumobot-competition
 :summary: Sumobot with Lego mindstorm and program in Jediscript.
 
