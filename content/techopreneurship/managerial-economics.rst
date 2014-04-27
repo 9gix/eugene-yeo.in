@@ -1,7 +1,7 @@
 Managerial Economics
 ====================
 
-:status: hidden
+:status: draft
 
 This journal contains some preliminary economics concepts that may be useful
 to make a decision in business or daily life.

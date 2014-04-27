@@ -2,6 +2,7 @@ Technopreneurship Quotes
 ========================
 
 :tags: quote
+:status: draft
 
 Rick Alden
 ----------

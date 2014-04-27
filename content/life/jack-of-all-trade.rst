@@ -1,7 +1,7 @@
 Jack of All Trade, Master of None
 =================================
 
-:status: hidden
+:status: draft
 
 It all begin when I was studying science.
 
