@@ -124,16 +124,19 @@ Setup PostgreSQL with PostGIS
     yum install postgresql
     yum install postgis
 
-    service postgresql initdb
+    postgresql-setup initdb
     service postgresql start
     chkconfig postgresql on
 
     sudo -u postgres psql
     > create user eugene createdb createuser password 'password';
 
-    createdb mydb
-    CREATE EXTENSION postgis;
-    CREATE EXTENSION postgis_topology;
+    createdb eugene
+
+    # For POSTGIS
+    psql
+    > CREATE EXTENSION postgis;
+    > CREATE EXTENSION postgis_topology;
 
 PostGIS setup troubleshoot: 
 
