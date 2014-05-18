@@ -74,5 +74,21 @@ Note: Execute with `sudo` command when needed
     > \password $USER
     sudo -u postgres createdb $USER
 
-    
 
+    # Setup Java OpenJDK
+    apt install openjdk-7-jdk
+
+    # Setup Java Oracle JDK 
+    # https://www.digitalocean.com/community/articles/how-to-install-java-on-ubuntu-with-apt-get
+    add-apt-repository ppa:webupd8team/java
+    apt update
+    apt install oracle-java8-installer
+    
+    # Java Environment
+    # >> ~/.bashrc
+    export PATH=$PATH:/usr/lib/jvm/java-<VERSION>-<VENDOR>/bin
+    export JAVA_HOME=/usr/lib/jvm/java-<VERSION>-<VENDOR>
+
+    # ElasticSearch Setup Guide
+    # http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/setup-repositories.html
+    # http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/setup-service.html

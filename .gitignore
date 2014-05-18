@@ -2,3 +2,4 @@
 output
 *.pid
 node_modules
+cache

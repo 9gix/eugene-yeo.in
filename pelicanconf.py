@@ -30,7 +30,9 @@ DEFAULT_PAGINATION = 10
 # Uncomment following line if you want document-relative URLs when developing
 RELATIVE_URLS = True
 
-PLUGIN_PATH = os.path.join(PROJECT_DIR, 'plugins')
+PLUGIN_PATH = [
+    os.path.join(PROJECT_DIR, 'plugins', 'pelican-plugins')
+]
 PLUGINS = [
     'pelican_youtube', 
     'assets',
@@ -39,7 +41,19 @@ PLUGINS = [
 
 STATIC_PATHS = ['images',]
 
-THEME = os.path.join(PROJECT_DIR, 'themes', 'clean')
+PELICAN_THEME_DIR = os.path.join(PROJECT_DIR, 'themes', 'pelican-themes')
+"""
+# Compatible Pelican Themes
+THEME = os.path.join(PELICAN_THEME_DIR, 'pelican-mockingbird')
+THEME = os.path.join(PELICAN_THEME_DIR, 'dev-random')
+THEME = os.path.join(PELICAN_THEME_DIR, 'chunk')
+THEME = os.path.join(PELICAN_THEME_DIR, 'fresh')
+THEME = os.path.join(PELICAN_THEME_DIR, 'elegant')
+THEME = os.path.join(PELICAN_THEME_DIR, 'mnmlist')
+THEME = os.path.join(PELICAN_THEME_DIR, 'monospace')
+THEME = os.path.join(PELICAN_THEME_DIR, 'nmnlist')
+"""
+THEME = os.path.join(PELICAN_THEME_DIR, 'tuxlite_tbs')
 
 GOOGLE_ANALYTICS = "UA-48871995-1"
 
