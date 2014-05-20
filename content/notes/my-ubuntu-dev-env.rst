@@ -8,7 +8,17 @@ Terminal Shortcut:
 * CTRL+SHIFT+UP/DOWN
 * SHIFT+PAGE UP/DOWN
 
-Note: Execute with `sudo` command when needed
+Terminology:
+
+* `#` Comment
+* `=#` Postgres console
+* `>` Replace the specified file with the following lines
+* `>>` Append to the specified file with the following lines
+
+Note: 
+
+#. Execute with `sudo` command when needed
+#. `Fedora Setup`_
 
 .. code-block:: bash
 
@@ -29,13 +39,12 @@ Note: Execute with `sudo` command when needed
     # revision control
     apt install git mercurial subversion
 
-    # Append to ~/.bashrc
-    export WORKON_HOME=$HOME/.virtualenvs
-    export PROJECT_HOME=$HOME/Devel
-    source /usr/local/bin/virtualenvwrapper.sh
+    apt install python-pip
+    pip install virtualenvwrapper
 
     # Python VirtualEnvironment 
     # http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html
+    # >> ~/.bashrc
     export WORKON_HOME=$HOME/.virtualenvs
     export PROJECT_HOME=$HOME/Workspace
     export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
@@ -48,7 +57,7 @@ Note: Execute with `sudo` command when needed
     apt install nodejs npm nodejs-legacy
     npm config set prefix ~/.npm
 
-    # Append to ~/.bashrc
+    # >> ~/.bashrc
     export PATH=$HOME/.npm/bin:$PATH 
 
     # Ruby Version Manager
@@ -65,15 +74,14 @@ Note: Execute with `sudo` command when needed
 
     # set root password
     sudo -u postgres psql postgres
-    > \password postgres
+    =# \password postgres
     sudo -u postgres createdb mydb
 
     # alternative: set user as superuser
     sudo -u postgres createuser --superuser $USER
+    sudo -u $USER createdb $USER
     sudo -u $USER psql
-    > \password $USER
-    sudo -u postgres createdb $USER
-
+    =# \password <your-user-name>
 
     # Setup Java OpenJDK
     apt install openjdk-7-jdk
@@ -92,3 +100,8 @@ Note: Execute with `sudo` command when needed
     # ElasticSearch Setup Guide
     # http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/setup-repositories.html
     # http://www.elasticsearch.org/guide/en/elasticsearch/reference/current/setup-service.html
+
+    # Bash Alias File: ~/.bash_aliases
+
+
+.. _Fedora Setup: /setup-fedora-as-development-environment.html
