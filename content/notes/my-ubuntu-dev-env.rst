@@ -30,6 +30,22 @@ Note:
     # text editor
     apt install vim
 
+    # Vim Pathogen installation
+    mkdir -p ~/.vim/autoload ~/.vim/bundle; \
+    curl -LSso ~/.vim/autoload/pathogen.vim \
+        https://raw.github.com/tpope/vim-pathogen/master/autoload/pathogen.vim
+
+    # >> ~/.bashrc
+    execute pathogen#infect()
+    syntax on
+    filetype plugin indent on
+
+    # Start Installing Vim Plugin inside the ~/.vim/bundle like this
+    cd ~/.vim/bundle
+    git clone git://github.com/tpope/vim-sensible.git
+
+    # Ref: see my vimrc file below
+
     # terminal workspace
     apt install yakuake
 
@@ -103,5 +119,9 @@ Note:
 
     # Bash Alias File: ~/.bash_aliases
 
+Ref:
+
+* `vimrc file`_
 
 .. _Fedora Setup: /setup-fedora-as-development-environment.html
+.. _vimrc file: /my-vimrc.html
