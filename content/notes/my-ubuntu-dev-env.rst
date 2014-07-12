@@ -58,7 +58,7 @@ Note:
     apt install python-pip
     pip install virtualenvwrapper
 
-    # Python VirtualEnvironment 
+    # Python VirtualEnvironment
     # http://virtualenvwrapper.readthedocs.org/en/latest/command_ref.html
     # >> ~/.bashrc
     export WORKON_HOME=$HOME/.virtualenvs
@@ -66,15 +66,16 @@ Note:
     export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
     source /usr/local/bin/virtualenvwrapper_lazy.sh
 
-    # SSH & Git see: 
+    # SSH & Git see:
     # http://blog.eugene-yeo.in/setup-fedora-as-development-environment.html
 
     # NodeJS
-    apt install nodejs npm nodejs-legacy
+    apt install nodejs nodejs-legacy
+    curl https://www.npmjs.org/install.sh | sh
     npm config set prefix ~/.npm
 
     # >> ~/.bashrc
-    export PATH=$HOME/.npm/bin:$PATH 
+    export PATH=$HOME/.npm/bin:$PATH
 
     # Ruby Version Manager
     curl -L https://get.rvm.io | bash -s stable
@@ -102,12 +103,12 @@ Note:
     # Setup Java OpenJDK
     apt install openjdk-7-jdk
 
-    # Setup Java Oracle JDK 
+    # Setup Java Oracle JDK
     # https://www.digitalocean.com/community/articles/how-to-install-java-on-ubuntu-with-apt-get
     add-apt-repository ppa:webupd8team/java
     apt update
     apt install oracle-java8-installer
-    
+
     # Java Environment
     # >> ~/.bashrc
     export PATH=$PATH:/usr/lib/jvm/java-<VERSION>-<VENDOR>/bin
