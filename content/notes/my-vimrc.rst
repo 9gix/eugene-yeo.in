@@ -18,3 +18,6 @@ My .vimrc file
 
     set omnifunc=syntaxcomplete#Complete
     imap </: </<C-X><C-O>
+
+    "set colorcolumn to 80 character limit
+    set cc=80
