@@ -73,4 +73,16 @@ Reference made based on the official documentation `Bootstrap 3.1 <http://getboo
          */
     }
 
+Minimalistic navbar
+
+.. code-block:: html
+
+    <div class='navbar navbar-default' role='navigation'>
+        <div class='container'>
+          <div class='navbar-header'><!-- this class only affect on mobile -->
+          </div>
+          <div class='navbar-collapse'><!-- this class only affect on mobile -->
+          </div>
+        </div>
+    </div>
 
