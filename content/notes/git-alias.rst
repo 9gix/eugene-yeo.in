@@ -7,6 +7,7 @@ Git Alias
 .. code-block:: bash
 
     # File: ~/.gitconfig
+    # or File: /etc/gitconfig
 
     [alias]
         co = checkout
